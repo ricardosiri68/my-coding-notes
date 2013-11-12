@@ -1,0 +1,13 @@
+<b:if cond='data:blog.pageType == &quot;index&quot;'>
+  <div itemscope='itemscope' itemtype='http://schema.org/Blog' style='display: none;'>
+    <meta expr:content='data:blog.title' itemprop='name'/>
+    <b:if cond='data:blog.metaDescription'>
+      <meta expr:content='data:blog.metaDescription' itemprop='description'/>
+    </b:if>
+    <div itemscope='' itemtype='http://data-vocabulary.org/Review'>
+      <span itemprop='rating'>5</span>
+      <span itemprop='reviewer'><data:blog.pageTitle/></span>
+      <span itemprop='itemreviewed'><data:blog.pageTitle/></span>
+    </div>
+  </div>
+</b:if>

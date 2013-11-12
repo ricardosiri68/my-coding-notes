@@ -1,0 +1,56 @@
+	<meta content='IE=EmulateIE7' http-equiv='X-UA-Compatible'/>
+	<b:if cond='data:blog.isMobile'>
+       <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/>
+	<b:else/>
+       <meta content='width=1100' name='viewport'/>
+    </b:if>
+	<b:include data='blog' name='all-head-content'/>
+    <b:if cond='data:blog.pageType == &quot;index&quot;'>
+      <title>
+          <data:blog.pageTitle/>
+      </title><b:else/>
+      <title>
+          <data:blog.pageName/>
+      </title>
+    </b:if>
+    <b:if cond='data:blog.metaDescription != &quot;&quot;'>
+    </b:if>
+	<meta content='id' http-equiv='Content-Language'/>
+	<meta content='global' name='target'/>
+	<meta content='ALL' name='spiders'/>
+	<meta content='Blogger' name='publisher'/>
+<!--[if IE]>
+<script src="https://rawgithub.com/ricardosiri68/my-coding-notes-template/master/scripts/ie.js"  type="text/javascript" ></script>
+<![endif]-->
+<!--[if lte IE 7]>
+        <script src="js/IE8.js" type="text/javascript"></script>
+<![endif]-->
+<b:skin><![CDATA[ ]]></b:skin>
+<b:if cond='data:blog.pageType == &quot;index&quot;'>
+  <style>
+      #sidebar{display:none!important;}
+   </style>
+  </b:if>
+<b:if cond='data:blog.pageType != &quot;index&quot;'>
+<style>
+	.timestamp-link{ display:none!important; }
+h3.post-title a,
+.entry-title{
+	font-size:150%;
+	border-bottom:#eee 1px solid;
+	padding-bottom:20px;
+	margin-bottom:20px;
+	width:100%; 
+}
+ </style>
+ </b:if>
+  <b:template-skin><![CDATA[  ]]></b:template-skin>
+<link rel="stylesheet" href="https://rawgithub.com/ricardosiri68/my-coding-notes-template/master/style/template-skin.css" />
+<link rel="stylesheet" href="https://rawgithub.com/ricardosiri68/my-coding-notes-template/master/style/base.css" />
+    <noscript>
+<style>
+.show {display: none;}.hide:focus + .show {display: inline;}.hide:focus {display: none;}.hide:focus ~ #Pages ul li {display: block;}
+</style>
+	</noscript>
+<script src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'/>
+<script src="https://rawgithub.com/ricardosiri68/my-coding-notes-template/master/scripts/responsive-ie.js"></script>

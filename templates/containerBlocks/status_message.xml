@@ -1,0 +1,8 @@
+<b:includable id='status-message'>
+  <b:if cond='data:navMessage'>
+    <div class='nav-mesg'>
+<b:if cond='data:blog.pageType == &quot;error_page&quot;'>404 </b:if><data:navMessage/>
+  </div>
+  <div style='clear: both;'/>
+  </b:if>
+</b:includable>

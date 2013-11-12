@@ -1,0 +1,28 @@
+<div class='row'>
+  <div class='sixcol '>
+    <p>Copyright &#169;
+      <a expr:href='data:blog.homepageUrl' title='All Rights Reserved'>
+        <data:blog.title/>
+      </a>Template by :
+      <a href='http://urang-kurai.blogspot.com' target='blank' title='All Rights Reserved'>
+        Ricardo Agustin Siri
+      </a>
+    </p>
+  </div>
+  <div class='sixcol  last'>
+    <b:section class='footer' id='footer'>
+      <b:widget id='HTML1' locked='false' title='' type='HTML'>
+        <b:includable id='main'>
+          <!-- only display title if it's non-empty -->
+          <b:if cond='data:title != &quot;&quot;'>
+            <h2 class='title'><data:title/></h2>
+          </b:if>
+          <div class='widget-content'>
+            <data:content/>
+          </div>
+          <b:include name='quickedit'/>
+        </b:includable>
+      </b:widget>
+    </b:section>
+  </div>
+</div>

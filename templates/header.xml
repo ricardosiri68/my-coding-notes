@@ -1,0 +1,115 @@
+<div class='row'>
+  <div class='header_title_block'>
+    <b:section class='header' id='header' showaddelement='no'>
+      <b:widget id='Header1' locked='true' title='Mis Notas de Codigo (cabecera)' type='Header'>
+        <b:includable id='main'>
+          <b:if cond='data:useImage'>
+            <b:if cond='data:imagePlacement == &quot;BEHIND&quot;'>
+              <b:if cond='data:mobile'>
+                <div id='header-inner'>
+                  <div class='titlewrapper' style='background: transparent'>
+                    <h1 class='title' style='background: transparent; border-width: 0px'>
+                      <b:include name='title'/>
+                    </h1>
+                  </div>
+                  <b:include name='description'/>
+                </div>
+                <b:else/>
+                <div expr:style='&quot;background-image: url(\&quot;&quot; + data:sourceUrl + &quot;\&quot;); &quot;                        + &quot;background-position: &quot;                        + data:backgroundPositionStyleStr + &quot;; &quot;                        + data:widthStyleStr                        + &quot;min-height: &quot; + data:height                        + &quot;_height: &quot; + data:height                        + &quot;background-repeat: no-repeat; &quot;' id='header-inner'>
+                  <div class='titlewrapper' style='background: transparent'>
+                    <h1 class='title' style='background: transparent; border-width: 0px'>
+                      <b:include name='title'/>
+                    </h1>
+                  </div>
+                  <b:include name='description'/>
+                </div>
+              </b:if>
+              <b:else/>
+              <!--Show the image only-->
+              <div id='header-inner'>
+                <a expr:href='data:blog.homepageUrl' style='display: block'>
+                  <img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_headerimg&quot;' expr:src='data:sourceUrl' expr:width='data:width' style='display: block'/>
+                </a>
+                <!--Show the description-->
+                <b:if cond='data:imagePlacement == &quot;BEFORE_DESCRIPTION&quot;'>
+                  <b:include name='description'/>
+                </b:if>
+              </div>
+            </b:if>
+            <b:else/>
+            <!--No header image -->
+            <div id='header-inner'>
+              <div class='titlewrapper'>
+                <h1 class='title'>
+                  <b:include name='title'/>
+                </h1>
+                <div id='search-box'>
+                  <form action='/search' id='search-form' method='get' target='_top'>
+                    <input id='search-text' name='q' placeholder='Buscar en el Blog' type='text'/>
+                  </form>
+                </div>
+              </div>
+              <b:include name='description'/>
+            </div>
+          </b:if>
+        </b:includable>
+        <b:includable id='description'>
+          <div class='descriptionwrapper'>
+            <p class='description'><span><data:description/></span></p>
+          </div>
+        </b:includable>
+        <b:includable id='title'>
+          <b:if cond='data:blog.url == data:blog.homepageUrl'>
+            <data:title/>
+            <b:else/>
+            <a expr:href='data:blog.homepageUrl'><data:title/></a>
+          </b:if>
+        </b:includable>
+      </b:widget>
+    </b:section>
+  </div>
+  <div class='header_nav_block'>
+    <b:section class='Pages' id='Pages' showaddelement='no'>
+      <b:widget id='PageList1' locked='true' title='Pages' type='PageList'>
+        <b:includable id='main'>
+          <b:if cond='data:title'><h2><data:title/></h2></b:if>
+          <div class='widget-content'>
+            <b:if cond='data:mobile'>
+              <select expr:id='data:widget.instanceId + &quot;_select&quot;'>
+                <b:loop values='data:links' var='link'>
+                  <b:if cond='data:link.isCurrentPage'>
+                    <option expr:value='data:link.href' selected='selected'><data:link.title/></option>
+                    <b:else/>
+                    <option expr:value='data:link.href'><data:link.title/></option>
+                  </b:if>
+                </b:loop>
+              </select>
+              <span class='pagelist-arrow'>&amp;#9660;</span>
+              
+              <b:else/>
+              <ul>
+                <b:loop values='data:links' var='link'>
+                  <b:if cond='data:link.isCurrentPage'>
+                    <li class='selected'><a expr:href='data:link.href'><data:link.title/></a></li>
+                    <b:else/>
+                    <li><a expr:href='data:link.href'><data:link.title/></a></li>
+                  </b:if>
+                </b:loop>
+                <li><a href='/search/label/python'>SQL</a></li>
+                <li><a href='/search/label/python'>Python</a></li>
+                <li><a href='/search/label/python'>Maquetado HTML/CSS</a></li>
+                <li><a href='/search/label/javascript'>JavaScript</a></li>
+                <li><a href='/search/label/python'>Pair Programming</a></li>
+                <li><a href='/search/label/python'>git, github, bitbucket</a></li>
+                <li><a href='/search/label/python'>Vi/Vim</a></li>
+                <li><a href='/search/label/python'>Sublime Text 2</a></li>
+                <li><a href='/search/label/python'>GNU/Linux</a></li>
+              </ul>
+            </b:if>
+            
+          </div>
+        </b:includable>
+      </b:widget>
+    </b:section>
+  </div>
+</div>

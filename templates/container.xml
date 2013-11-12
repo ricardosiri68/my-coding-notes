@@ -1,0 +1,36 @@
+<div class='container'>
+  <div class='row inner-container'>
+    <div class='eightcol'>
+      <b:section class='main' id='main' showaddelement='no'>
+        <b:widget id='Blog1' locked='true' title='Entradas del blog' type='Blog'>
+          <%include file="containerBlocks/main.xml"/>
+          <%include file="containerBlocks/backlink_delete_icon.xml" />
+          <%include file="containerBlocks/backlinks.xml"/>
+          <%include file="containerBlocks/comment_form.xml"/>
+          <%include file="containerBlocks/comment_delete_icon.xml"/>
+          <%include file="containerBlocks/comment_count_picker.xml"/>
+          <%include file="containerBlocks/comment_picker.xml"/>
+          <%include file="containerBlocks/comments.xml"/>
+          <%include file="containerBlocks/feed_links.xml"/>
+          <%include file="containerBlocks/feed_links_body.xml"/>
+          <%include file="containerBlocks/mobile_index_post.xml"/>
+          <%include file="containerBlocks/mobile_main.xml"/>
+          <%include file="containerBlocks/mobile_nextprev.xml"/>
+          <%include file="containerBlocks/mobile_post.xml"/>
+          <%include file="containerBlocks/nextprev.xml"/>
+          <%include file="containerBlocks/post.xml"/>
+          <%include file="containerBlocks/share_buttons.xml"/>
+          <%include file="containerBlocks/status_message.xml"/>
+          <%include file="containerBlocks/threaded_comment_form.xml"/>
+          <%include file="containerBlocks/threaded_comment_js.xml"/>
+          <%include file="containerBlocks/threaded_comments.xml"/>
+        </b:widget>
+      </b:section>
+    <div class='clear'/></div>
+    <aside>
+    <div class='fourcol last'>
+      <%include file="containerBlocks/popular_posts.xml"/>
+    <div class='clear'/></div>
+    </aside>
+  </div>
+</div>
