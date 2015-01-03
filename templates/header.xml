@@ -88,7 +88,7 @@
               <b:else/>
               <ul>
                 <b:loop values='data:links' var='link'>
-                  <b:if cond='data:link.isCurrentPage'>
+                <b:if cond='data:blog.pageName == data:link.name'>
                     <li class='selected'><a expr:href='data:link.href'><data:link.title/></a></li>
                     <b:else/>
                     <li><a expr:href='data:link.href'><data:link.title/></a></li>
