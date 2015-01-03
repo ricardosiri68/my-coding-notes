@@ -159,7 +159,7 @@ sup {
     font-size: 9px;
     line-height: 0;
 }
-#Pages ul li {
+#Pages ul > li {
     display: inline;
     float: right;
     background: rgba(231, 35, 35, 0.64);
@@ -167,6 +167,9 @@ sup {
     font-size: 12px;
     margin: -22px 0 2px 4px;
     padding: 5px 10px;
+}
+#Pages ul > li.selected{
+    background: #444;
 }
 #Pages ul li a,#Pages ul li a:hover{
     font-weight: bold;
