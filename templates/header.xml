@@ -85,7 +85,6 @@
                 </b:loop>
               </select>
               <span class='pagelist-arrow'>&amp;#9660;</span>
-              
               <b:else/>
               <ul>
                 <b:loop values='data:links' var='link'>
@@ -95,18 +94,8 @@
                     <li><a expr:href='data:link.href'><data:link.title/></a></li>
                   </b:if>
                 </b:loop>
-                <li><a href='/search/label/python'>SQL</a></li>
-                <li><a href='/search/label/python'>Python</a></li>
-                <li><a href='/search/label/python'>Maquetado HTML/CSS</a></li>
-                <li><a href='/search/label/javascript'>JavaScript</a></li>
-                <li><a href='/search/label/python'>Pair Programming</a></li>
-                <li><a href='/search/label/python'>git, github, bitbucket</a></li>
-                <li><a href='/search/label/python'>Vi/Vim</a></li>
-                <li><a href='/search/label/python'>Sublime Text 2</a></li>
-                <li><a href='/search/label/python'>GNU/Linux</a></li>
               </ul>
             </b:if>
-            
           </div>
         </b:includable>
       </b:widget>
