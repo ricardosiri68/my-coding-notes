@@ -1,4 +1,5 @@
 <b:includable id='threaded-comment-form' var='post'>
+  <!-- THREADED COMMENT FORM -->
   <div class='comment-form'>
     <a name='comment-form'/>
     <b:if cond='data:mobile'>
@@ -18,4 +19,5 @@
       BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;, &#39;<data:post.communityId/>&#39;);
     </script>
   </div>
+  <!-- //THREADED COMMENT FORM -->
 </b:includable>

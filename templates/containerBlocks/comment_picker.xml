@@ -1,4 +1,5 @@
 <b:includable id='comment_picker' var='post'>
+  <!-- COMMENT PICKER -->
   <b:if cond='data:post.forceIframeComments'>
     <b:include data='post' name='iframe_comments'/>
     <b:if cond='data:post.showThreadedComments'>
@@ -17,4 +18,5 @@
       </b:if>
     </b:if>
   </b:if>
+  <!-- //COMMENT PICKER -->
 </b:includable>

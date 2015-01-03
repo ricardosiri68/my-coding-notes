@@ -1,4 +1,5 @@
 <b:includable id='feedLinksBody' var='links'>
+  <!-- FEED LINKS BODY -->
   <div class='feed-links'>
   <data:feedLinksMsg/>
   <b:loop values='data:links' var='f'>
@@ -14,4 +15,5 @@
       <a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'><data:postCommentMsg/></a>
     </b:if>
   </b:if>
+  <!-- FEED LINKS BODY -->
 </b:includable>

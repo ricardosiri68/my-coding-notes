@@ -1,4 +1,5 @@
 <b:includable id='mobile-main' var='top'>
+    <!-- MOBILE MAIN -->
     <!-- posts -->
     <div class='blog-posts hfeed'>
       <b:include data='top' name='status-message'/>
@@ -13,4 +14,5 @@
       </b:if>
     </div>
     <b:include name='mobile-nextprev'/>
+    <!-- //MOBILE MAIN -->
 </b:includable>

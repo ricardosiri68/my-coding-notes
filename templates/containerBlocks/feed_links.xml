@@ -1,4 +1,5 @@
 <b:includable id='feedLinks'>
+  <!-- FEEDLINKS -->
   <b:if cond='data:blog.pageType != &quot;item&quot;'> <!-- Blog feed links -->
     <b:if cond='data:feedLinks'>
       <div class='blog-feeds'>
@@ -16,4 +17,5 @@
       </b:loop>
     </div>
   </b:if>
+  <!-- //FEEDLINKS -->
 </b:includable>

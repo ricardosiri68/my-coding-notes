@@ -1,4 +1,5 @@
 <b:includable id='backlinks' var='post'>
+  <!-- BACKLINKS -->
   <a name='links'/><h4><data:post.backlinksLabel/></h4>
   <b:if cond='data:post.numBacklinks != 0'>
     <dl class='comments-block' id='comments-block'>
@@ -23,4 +24,5 @@
   <p class='comment-footer'>
     <a class='comment-link' expr:href='data:post.createLinkUrl' expr:id='data:widget.instanceId + &quot;_backlinks-create-link&quot;' target='_blank'><data:post.createLinkLabel/></a>
   </p>
+  <!-- //BACKLINKS -->
 </b:includable>

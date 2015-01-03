@@ -1,4 +1,5 @@
 <b:includable id='comment_count_picker' var='post'>
+  <!-- COMMENT COUNTER PICKER -->
   <b:if cond='data:post.forceIframeComments'>
     <span class='cmt_count_iframe_holder' expr:data-count='data:post.numComments' expr:data-onclick='data:post.addCommentOnclick' expr:data-url='data:post.canonicalUrl'>
     </span>
@@ -12,4 +13,5 @@
       </a>
     </b:if>
   </b:if>
+  <!-- //COMMENT COUNTER PICKER -->
 </b:includable>

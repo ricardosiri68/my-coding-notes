@@ -1,4 +1,5 @@
 <b:includable id='commentDeleteIcon' var='comment'>
+  <!-- COMMENT DELETE ICON -->
   <span expr:class='&quot;item-control &quot; + data:comment.adminClass'>
     <b:if cond='data:showCmtPopup'>
       <div class='goog-toggle-button'>
@@ -10,4 +11,5 @@
       </a>
     </b:if>
   </span>
+  <!-- //COMMENT DELELTE ICON -->
 </b:includable>

@@ -1,4 +1,5 @@
 <b:includable id='comment-form' var='post'>
+  <!-- COMMENT FORM -->
   <div class='comment-form'>
     <a name='comment-form'/>
     <b:if cond='data:mobile'>
@@ -21,4 +22,5 @@
       BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;, &#39;<data:post.communityId/>&#39;);
     </script>
   </div>
+  <!-- //COMMENT FORM -->
 </b:includable>

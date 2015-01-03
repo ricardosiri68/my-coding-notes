@@ -1,4 +1,5 @@
 <b:includable id='mobile-index-post' var='post'>
+  <!-- MOBILE INDEX POST -->
   <div class='mobile-date-outer date-outer'>
     <b:if cond='data:post.dateHeader'>
       <div class='date-header'>
@@ -41,4 +42,5 @@
       </div>
     </div>
   </div>
+  <!-- //MOBILE INDEX POST -->
 </b:includable>

@@ -1,11 +1,13 @@
 <b:includable id='threaded_comment_js' var='post'>
-  <script async='async' expr:src='data:post.commentSrc' type='text/javascript'/>
-  <script>
-    blogConf = {
-      items : <data:post.commentJso/>,
-      msgs : <data:post.commentMsgs/>,
-      config : <data:post.commentConfig/>
-    }
-  </script>
-  <script src="https://rawgithub.com/ricardosiri68/my-coding-notes-template/master/scripts/blog-conf.js" ></script>
+	<!-- THREADED COMMENT JS -->
+	<script async='async' expr:src='data:post.commentSrc' type='text/javascript'/>
+	<script>
+	blogConf = {
+	  items : <data:post.commentJso/>,
+	  msgs : <data:post.commentMsgs/>,
+	  config : <data:post.commentConfig/>
+	}
+	</script>
+	<script src="https://rawgithub.com/ricardosiri68/my-coding-notes-template/master/scripts/blog-conf.js" ></script>
+	<!-- //THREADED COMMENT JS -->
 </b:includable>

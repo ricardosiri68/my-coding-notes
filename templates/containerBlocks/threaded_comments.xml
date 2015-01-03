@@ -1,4 +1,5 @@
 <b:includable id='threaded_comments' var='post'>
+  <!-- THREADED COMMENTS -->
   <div class='comments' id='comments'>
     <a name='comments'/>
     <h4><data:post.commentLabelFull/>:</h4>
@@ -20,16 +21,16 @@
     </p>
     <b:if cond='data:showCmtPopup'>
       <div id='comment-popup'>
-        <iframe allowtransparency='true' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'>
-        </iframe>
+        <iframe allowtransparency='true' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'></iframe>
       </div>
     </b:if>
     <div id='backlinks-container'>
-    <div expr:id='data:widget.instanceId + &quot;_backlinks-container&quot;'>
-       <b:if cond='data:post.showBacklinks'>
-         <b:include data='post' name='backlinks'/>
-       </b:if>
-    </div>
+      <div expr:id='data:widget.instanceId + &quot;_backlinks-container&quot;'>
+         <b:if cond='data:post.showBacklinks'>
+           <b:include data='post' name='backlinks'/>
+         </b:if>
+      </div>
     </div>
   </div>
+  <!-- //THREADED COMMENTS -->
 </b:includable>

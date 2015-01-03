@@ -1,4 +1,5 @@
 <b:includable id='main' var='top'>
+  <!-- MAIN -->
   <b:if cond='data:mobile == &quot;false&quot;'>
     <!-- posts -->
     <div class='blog-posts hfeed'>
@@ -77,4 +78,5 @@
   <b:if cond='data:top.showDummy'>
     <data:top.dummyBootstrap/>
   </b:if>
+  <!-- //MAIN -->
 </b:includable>

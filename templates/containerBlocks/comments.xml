@@ -1,4 +1,5 @@
 <b:includable id='comments' var='post'>
+  <!-- COMMENTS -->
   <div class='comments' id='comments'>
     <a name='comments'/>
     <b:if cond='data:post.allowComments'>
@@ -113,4 +114,5 @@
     </div>
     </div>
   </div>
+  <!-- //COMMENTS -->
 </b:includable>
