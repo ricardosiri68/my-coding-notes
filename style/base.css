@@ -169,7 +169,7 @@ sup {
     padding: 5px 10px;
 }
 #Pages ul > li.selected{
-    background: #444;
+    background: rgba(68, 68, 68, 0.64);
 }
 #Pages ul li a,#Pages ul li a:hover{
     font-weight: bold;
